@@ -24,10 +24,10 @@
     --color-system: #ffffff;
 
     /* 1 v. */
-    /* --color-main: #c31e2f;
+    --color-main: #c31e2f;
     --color-main-l: #c25963; 
     --color-border: #000000;
-    */
+   
 
     /* 2v. */
     /* --color-main: #ff7300;
@@ -35,9 +35,9 @@
     --color-border: #ce7500; */
 
     /* 3v. */
-    --color-main: #002fff;
+    /* --color-main: #002fff;
     --color-main-l: #82dcff;
-    --color-border: #6a00ce;
+    --color-border: #6a00ce; */
     
     --color-main-text: #000000;
     --color-sec-text: #bbbbbb;
