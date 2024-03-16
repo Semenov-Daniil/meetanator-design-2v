@@ -1,0 +1,236 @@
+/* 
+    Author: Semenov Daniil
+    Main page style
+    The name of the style is written in TAILWIND
+*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Hero */
+.hero {
+    border-bottom: var(--width-border) solid var(--color-border);
+    border-right: var(--width-border) solid var(--color-border);
+    overflow: hidden;
+}
+
+.hero > div {
+    flex: 1;
+}
+
+.hero-logo {
+    position: relative;
+
+    font-family: "Exo2-700", Arial, sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+    line-height: 100%;
+
+    color: var(--color-main);
+}
+
+.hero-logo span {
+    color: var(--color-main-text);
+}
+
+.slogan-wrapp {
+    flex: 2;
+
+    font-size: 2rem;
+}
+
+.slogan {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.slogan span {
+    color: var(--color-main);
+}
+
+.hero-btn {
+    border: 1px solid var(--color-border);
+    border-left: 0;
+
+    border-radius: 0 50px 50px 0;
+
+    padding: 10px 20px;
+
+    height: fit-content;
+
+    font-size: 2rem;
+}
+
+.hero-widget {
+    overflow: hidden;
+}
+
+.hero-btn .btn {
+    border-radius: 50px;
+}
+
+.hero-widget::before {
+    content: '';
+
+    width: 5px;
+
+    border: 1px solid var(--color-border);
+    border-right: 0;
+
+    background-color: var(--color-main);
+}
+
+.hero-btn {
+    position: relative;
+    animation: hero-btn-promo 1.8s;
+}
+
+@keyframes hero-btn-promo {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.hero .img-wrapp {
+    position: relative;
+    animation: img-visible 1.8s;
+}
+
+@keyframes img-visible {
+    from {
+        top: -50%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* Section About */
+.about .title {
+    position: relative;
+
+    border-left: var(--width-border) solid var(--color-border);
+}
+
+.about .about-tb {
+    position: relative;
+}
+
+.about .about-tb .about-col,
+.about .about-tb .about-col .about-cell {
+    flex: 1;
+}
+
+.about .about-tb,
+.about .about-tb .about-cell {
+    border: 1px solid var(--color-border);
+}
+
+.about .about-tb .about-col .about-cell {
+    padding: 20px 40px;
+}
+
+.about .about-tb .about-col .about-cell .about-cell-title {
+    padding-bottom: 20px;
+
+    font-family: "Exo2-700", Arail, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.about .about-tb .about-col .about-cell .about-cell-cnt {
+    font-size: 2.5rem;
+}
+
+/* Section System */
+.system {
+    border-right: var(--width-border) solid var(--color-border);
+    border-bottom: var(--width-border) solid var(--color-border);
+}
+
+.system .title {
+    text-align: end;
+}
+
+.system .title::after {
+    content: '';
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    height: var(--width-border);
+    width: 60%;
+
+    background-color: var(--color-border);
+}
+
+/* Section create meeting */
+.create {
+    border-left: var(--width-border) solid var(--color-border);
+    border-bottom: var(--width-border) solid var(--color-border);
+}
+
+.create form .dates span,
+.create form .dates .dates-list {
+    padding-left: 20px;
+}
+
+.create form .dates span {
+    font-size: 2.5rem;
+}
+
+.create form .dates .dates-list {
+    font-size: 1.6rem;
+}
+
+.dates-item input {
+    padding: 10px 20px;
+
+    border-bottom: var(--width-border) solid var(--color-sec-text);
+}
+
+.dates-item input:hover,
+.dates-item input:focus {
+    border-bottom-color: var(--color-main-text);
+}
+
+.btn-add-dates {
+    width: fit-content;
+
+    padding: 10px 30px;
+
+    border: 0;
+    border-bottom: var(--width-border) solid var(--color-border);
+
+    background-color: transparent;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.time input {
+    width: fit-content;
+    text-align: center;
+}
+
+.create form .bnt-wrapp {
+    padding: 20px;
+}
+
+/* Section Authorization */
+.auth {
+    padding-bottom: 50px;
+    border-right: var(--width-border) solid var(--color-border);
+}

@@ -1,0 +1,36 @@
+/* 
+    Author: Semenov Daniil
+    Media reqiest
+*/
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 6px;
+    }
+
+    .header nav {
+        justify-content: center;
+    }
+
+    .system-video-wrapp {
+        padding: 20px;
+    }
+
+    .container .title {
+        padding: 20px;
+    }
+
+    .footer table th {
+        padding: 10px;
+    }
+}

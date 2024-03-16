@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="header fd-r ai-c jc-c">
+        <nav class="container fd-r ai-c jc-sb fw-w g-20">
+            <div class="logo-wrapp">
+                <a class="logo" href="#">
+                    MEET
+                    <span>ANATOR</span>
+                </a>
+            </div>
+            <ul class="nav-list fd-r ai-c g-30 fw-w">
+                <li class="nav-item">
+                    <a class="link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#about">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#system">О системе</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#auth">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link-main" href="#create-meet">Создать встречу</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="container hero fd-r p-50">
+            <div class="fd-c g-20">
+                <!-- <h1 class="hero-logo">
+                    Meet<br/>
+                    <span>Anator</span>
+                </h1> -->
+                <div class="slogan-wrapp fd-c jc-sa g-20">
+                    <h1 class="slogan">Быстрая <span>компиляция</span> вашей встречи</h1>
+                    <p>Планируем весь IT мир.</p>
+                </div>
+                <div class="hero-widget fd-r">
+                    <div class="hero-btn fd-r ai-c jc-sb g-10">
+                        <span>Создавать встречи стало легче!</span>
+                        <button class="btn">Создать встречу</button>
+                    </div>
+                </div>
+            </div>
+            <div class="img-wrapp fd-r ai-c">
+                <img class="hero-img" src="./img/hero-svg.svg" alt="Планирование встречи">
+            </div>
+        </section>
+        <section class="about container" id="about">
+            <h1 class="title">О нас</h1>
+            <div class="about-tb fd-r fw-w">
+                <div class="about-col fd-c test">
+                    <div class="about-cell fd-c jc-c">
+                        <h2 class="about-cell-title">&gt; 4</h2>
+                        <p class="about-cell-cnt">Более 4 пользователей. С каждым днем нас все больше и больше!</p>
+                    </div>
+                    <div class="about-cell fd-c jc-c">
+                        <h2 class="about-cell-title">&gt; 4</h2>
+                        <p class="about-cell-cnt">Более 4 дней на рынке</p>
+                    </div>
+                </div>
+                <div class="about-col fd-c">
+                    <div class="about-cell fd-c jc-c">
+                        <h2 class="about-cell-title">146%</h2>
+                        <p class="about-cell-cnt">146% удовлетворенных пользователей. С каждым днем все больше и больше. Присоединяйся к нам!</p>
+                    </div>
+                    <div class="about-cell fd-c jc-c">
+                        <h2 class="about-cell-title">100 млн. ₽</h2>
+                        <p class="about-cell-cnt">100 млн. рублей привлеченных инвестиций 100 млн. рублей привлеченных инвестиций 100 млн. рублей привлеченных инвестиций 100 млн. рублей привлеченных инвестиций</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="system container" id="system">
+            <h1 class="title">О системе</h1>
+            <div class="system-video-wrapp p-50">
+                <video class="system-video" src="./video/about.mp4" muted="muted" autoplay="autoplay" loop="loop"></video>
+            </div>
+        </section>
+        <section class="create container" id="create-meet">
+            <h1 class="title">Создание встречи</h1>
+            <form class="fd-c g-30" action="#" method="post">
+                <div class="input-wrapp fd-c g-10">
+                    <label for="title">Название встречи</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="input-wrapp fd-c g-10">
+                    <label for="desc">Описание встречи</label>
+                    <textarea id="desc" rows="1"></textarea>
+                </div>
+                <div class="input-wrapp fd-c g-10">
+                    <label for="mt_email">E-mail</label>
+                    <input type="email" id="mt_email">
+                </div>
+                <div class="input-wrapp fd-c g-10">
+                    <label for="mt_password">Пароль</label>
+                    <input type="password" id="mt_password">
+                </div>
+                <div class="fd-c g-20 dates">
+                    <span>Дата</span>
+                    <div class="dates-list fd-r g-20 fw-w">
+                        <div class="dates-item">
+                            <input type="date" min="2024-02-28" max="2024-03-28" value="2024-02-28">
+                        </div>
+                        <div class="dates-item">
+                            <input type="date" min="2024-02-28" max="2024-03-28" value="2024-02-28">
+                        </div>
+                        <div class="dates-item">
+                            <input type="date" min="2024-02-28" max="2024-03-28" value="2024-02-28">
+                        </div>
+                    </div>
+                    <button class="btn-add-dates">+ добавить дату</button>
+                </div>
+                <div class="time fd-r g-30 fw-w">
+                    <div class="input-wrapp fd-c g-10 ai-c">
+                        <label for="start_mt">Начало</label>
+                        <input type="time" id="start_mt" value="09:00">
+                    </div>
+                    <div class="input-wrapp fd-c g-10 ai-c">
+                        <label for="end_mt">Окончание</label>
+                        <input type="time" id="end_mt" value="18:00">
+                    </div>
+                    <div class="input-wrapp fd-c g-10 ai-c">
+                        <label for="duraction">Продолжительность (мин.)</label>
+                        <input type="number" id="duraction" value="30" min="30" max="120">
+                    </div>
+                </div>
+                <div class="bnt-wrapp">
+                    <button class="btn">Создать встречу</button>
+                </div>
+            </form>
+        </section>
+        <section class="auth container" id="auth">
+            <h1 class="title">Авторизация</h1>
+            <form class="fd-c g-30" action="#" method="post">
+                <div class="input-wrapp fd-c g-10">
+                    <label for="at_email">E-mail</label>
+                    <input type="email" id="at_email">
+                </div>
+                <div class="input-wrapp fd-c g-10">
+                    <label for="at_password">Пароль</label>
+                    <input type="password" id="at_password">
+                </div>
+                <div class="bnt-wrapp">
+                    <button class="btn">Войти</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer fd-c ai-c jc-c">
+        <div class="container fd-c ai-c jc-c g-30">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="" colspan="3">
+                            <div class="logo-wrapp">
+                                <a class="logo" href="#">
+                                    MEET
+                                    <span>ANATOR</span>
+                                </a>
+                            </div>
+                            <h1>Управляй своей встерчей вместе с <span>нами</span>!</h1>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <a href="#about">О нас</a>
+                        </th>
+                        <th class="footer-btn-create">
+                            <button class="btn bnt-footer">Создать встречу</button>
+                        </th>
+                        <th>
+                            <a href="#system">О системе</a>
+                        </th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>
+                            <a href="./text/soglashenie.txt" download="download">Пользовательское соглашение</a>
+                        </th>
+                        <th>&copy;2024 Все права защищены</th>
+                        <th>
+                            <a href="./text/konfidencialnost.txt" download="download">Политика конфиденциальности</a>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+            <ul class="fd-r g-60">
+                <li>Development by Daniil Semenov</li>
+                <li>Design by Daniil Semenov</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
